@@ -7,5 +7,6 @@ const countryController = new CountryController();
 
 countryRouter.get('/test', countryController.test.bind(countryController));
 
+countryRouter.get('/country', countryController.getCounry.bind(countryController));
 
 export { countryRouter }
