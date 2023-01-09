@@ -1,17 +1,31 @@
 import { CountryModel } from '../model/country.model.mjs';
 
 export class CountryController {
-  constructor () {}
+  constructor () {
+    this.countryModel = new CountryModel();
+  }
 
   test(req, res) {
     res.send('Test done!');
   }
 
-  getCounry(req, res){
-    const country = {
-      country: 'Poland',
-      cities: ['Warsaw', 'Olsztyn']
-    };
+  getCounry(req, res) {
+    const code = req.query.code;
+    
+    const country = this.countryModel.getCountry(code);
     res.send(country);
   }
+
+  getCounries(req, res) {
+    const countries = this.countryModel.getCountries();
+    res.send(countries);
+  }
+
+  createCountry(req, res) {
+    const country = req.body;
+    this.countryModel.createCountry(country.code, country.data);
+    res.send('Success');
+  }
+
+  
 }
