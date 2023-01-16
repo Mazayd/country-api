@@ -1,1 +1,92 @@
-{"UA":{"name":"Ukraine"},"PL":{"name":"Poland"},"UK":{"name":"Great Britain"}}
+{
+    "UA": {
+        "name": "Ukraine",
+        "capital": "Kiev",
+        "code country": "UA",
+        "code telefon number": "+380",
+        "capital coordinates": "50° 27' 0.0036'' N and 30° 31' 23.9988'' E.",
+        "number of cities": "461",
+        "population": "43,79 million"
+    },
+    "AZE": {
+        "name": "Azerbaijan",
+        "capital": "Baku",
+        "code country": "AZE",
+        "code telefon number": "+994",
+        "capital coordinates": "40° 24' 33.3504'' N and 49° 52' 1.5312'' E",
+        "number of cities": "69",
+        "population": "10,14 million"
+    },
+    "ARM": {
+        "name": "Armenia",
+        "capital": "Yerevan",
+        "code country": "ARM",
+        "code telefon number": "+374",
+        "capital coordinates": " 40° 10' 37.9200'' N and 44° 30' 12.5640'' E.",
+        "number of cities": "48",
+        "population": "2,791 million"
+    },
+    "BY": {
+        "name": "Belarus",
+        "capital": "Minsk",
+        "code country": "BY",
+        "code telefon number": "+375",
+        "capital coordinates": "53° 53' 34.8324'' N and 27° 34' 2.7984'' E.",
+        "number of cities": "115",
+        "population": "9,34 million"
+    },
+    " KAZ": {
+        "name": "Kazakhstan",
+        "capital": "Astana",
+        "code country": " KAZ",
+        "code telefon number": " +7",
+        "capital coordinates": "51° 10' 9.8112'' N and 71° 26' 56.6664'' E.",
+        "number of cities": "89",
+        "population": "19 million"
+    },
+    " KZG": {
+        "name": "Kyrgyzstan",
+        "capital": "Bishkek",
+        "code country": " KZG",
+        "code telefon number": "+996",
+        "capital coordinates": "42° 52' 55.2144'' N and 74° 34' 57.8928'' E.",
+        "number of cities": "31",
+        "population": "6,692  million"
+    },
+    "MD": {
+        "name": "Moldova",
+        "capital": "Chisinau",
+        "code country": "MD",
+        "code telefon number": "+373",
+        "capital coordinates": "47° 0' 13.2120'' N and 28° 54' 25.5204'' E",
+        "number of cities": " 66",
+        "population": "2,615  million"
+    },
+    "TJK": {
+        "name": "Tajikistan",
+        "capital": "Dushanbe",
+        "code country": "TJK",
+        "code telefon number": "+992",
+        "capital coordinates": "38° 32' 8.7 N, and 68° 46' 44.6 E. ",
+        "number of cities": "17",
+        "population": " 9,75  million"
+    },
+    "UZB": {
+        "name": "Uzbekistan",
+        "capital": "Tashkent",
+        "code country": "UZB",
+        "code telefon number": "+998",
+        "capital coordinates": " 41° 18' 39.8916'' N and 69° 14' 26.0232'' E.",
+        "number of cities": "120",
+        "population": "34,92  million"
+    },
+    "TKM": {
+        "name": "Turkmenistan",
+        "capital": "Ashgabad",
+        "code country": "TKM",
+        "code telefon number": "+795",
+        "capital coordinates": "37°57'0 N, 58°22 59.99 E",
+        "number of cities": "24",
+        "population": " 6,342  million"
+    }
+}

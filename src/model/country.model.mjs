@@ -17,4 +17,9 @@ export class CountryModel {
     this.DB.addData(code, data);
     return data;
   }
+
+  deleteCountry(code){
+    return this.DB.deleteData(code);
+ 
+  }
 }

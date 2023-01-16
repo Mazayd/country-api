@@ -13,4 +13,6 @@ countryRouter.get('/countries', countryController.getCounries.bind(countryContro
 
 countryRouter.post('/countries', countryController.createCountry.bind(countryController));
 
+countryRouter.delete('/countries/:code', countryController.deleteCountry.bind(countryController));
+
 export { countryRouter }

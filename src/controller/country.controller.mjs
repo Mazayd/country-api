@@ -27,5 +27,9 @@ export class CountryController {
     res.send('Success');
   }
 
-  
+  deleteCountry(req, res){
+    const { code } = req.params;
+    this.countryModel.deleteCountry(code);
+    res.send('Success');
+  }
 }
