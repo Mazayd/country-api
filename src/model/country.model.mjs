@@ -1,16 +1,18 @@
 import { Reader } from '../lib/reader.mjs';
+import { Country } from '../shema/country.shema.mjs';
+
 
 export class CountryModel {
   constructor (filename = './data/country.json') {
     this.DB = new Reader(filename);
   }
 
-  getCountries() {
-    return this.DB.getData();
+  async getCountries() {
+    return await Country.find();
   }
 
-  getCountry(code) {
-    return this.DB.getData()[code];
+  async getCountry(code) {
+    return await Country.findById(code);
   }
 
   createCountry(code, data) {
@@ -18,8 +20,9 @@ export class CountryModel {
     return data;
   }
 
-  deleteCountry(code){
-    return this.DB.deleteData(code);
- 
+  async deleteCountry(code){
+    return await Country.findByIdAndDelete(code);
   }
+
 }
+

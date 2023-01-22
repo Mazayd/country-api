@@ -9,27 +9,32 @@ export class CountryController {
     res.send('Test done!');
   }
 
-  getCounry(req, res) {
+  async getCounry(req, res) {
     const code = req.query.code;
     
-    const country = this.countryModel.getCountry(code);
+    const country = await this.countryModel.getCountry(code);
     res.send(country);
   }
 
-  getCounries(req, res) {
-    const countries = this.countryModel.getCountries();
+  async getCounries(req, res) {
+    const countries = await this.countryModel.getCountries();
     res.send(countries);
   }
 
-  createCountry(req, res) {
-    const country = req.body;
-    this.countryModel.createCountry(country.code, country.data);
-    res.send('Success');
+  async createCountry(req, res) {
+    try {
+      await Country.create(req.body);
+      res.send('Success');
+    } catch(error) {
+        res.send(error);
+    };
+
   }
 
-  deleteCountry(req, res){
+  async deleteCountry(req, res){
     const { code } = req.params;
-    this.countryModel.deleteCountry(code);
+    await this.countryModel.deleteCountry(code);
     res.send('Success');
   }
 }
+
