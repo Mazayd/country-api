@@ -3,6 +3,7 @@ import * as dotenv from 'dotenv'
 import { countryRouter } from './src/routes/country.router.mjs'
 import mongoose from 'mongoose'
 import morgan from 'morgan'
+import { usersRouter } from './src/routes/user.router.mjs'
 
 
 dotenv.config()
@@ -25,6 +26,7 @@ mongoose
 app.use(express.json());
 app.use(morgan('common'));
 app.use('/api', countryRouter);
+app.use('/user', usersRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

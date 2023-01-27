@@ -1,4 +1,5 @@
 import { CountryModel } from '../model/country.model.mjs';
+import { Country } from '../shema/country.shema.mjs';
 
 export class CountryController {
   constructor () {
@@ -26,7 +27,7 @@ export class CountryController {
       await Country.create(req.body);
       res.send('Success');
     } catch(error) {
-        res.send(error);
+      res.send(error);
     };
 
   }
